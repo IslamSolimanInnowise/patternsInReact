@@ -16,8 +16,8 @@ const Iterator: React.FC = () => {
     <div>
       <h2>Iterator Pattern Example</h2>
       <p>Current Book: {book}</p>
-      <button onClick={() => next()}>Next Book</button>
-      <button onClick={() => reset()}>Reset</button>
+      <button onClick={next}>Next Book</button>
+      <button onClick={reset}>Reset</button>
     </div>
   );
 };

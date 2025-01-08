@@ -1,8 +1,8 @@
-export type ApiUser = {
+export interface ApiUser {
   first_name: string;
   last_name: string;
   user_age: number;
-};
+}
 
 export const fetchUserFromApi = async (): Promise<ApiUser> => {
   return {

@@ -1,16 +1,12 @@
 import { useEffect, useState } from "react";
-import { ApiFacade } from "./apiFacade";
-
-type User = { id: number; name: string };
-type Post = { id: number; title: string };
-type Comment = { postId: number; comment: string };
+import { AllData, ApiFacade } from "./apiFacade";
 
 const Facade: React.FC = () => {
-  const [data, setData] = useState<{
-    user: User | null;
-    posts: Post[] | null;
-    comments: Comment[] | null;
-  }>({ user: null, posts: null, comments: null });
+  const [data, setData] = useState<AllData>({
+    user: null,
+    posts: null,
+    comments: null,
+  });
 
   useEffect(() => {
     const fetchData = async () => {
