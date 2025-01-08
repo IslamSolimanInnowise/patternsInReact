@@ -1,6 +1,4 @@
-type ButtonProps = {
-  label: string;
-};
+import { ButtonProps } from "./ButtonFactory";
 
 export const PrimaryButton: React.FC<ButtonProps> = ({ label }) => (
   <button

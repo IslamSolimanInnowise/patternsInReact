@@ -2,10 +2,13 @@ import { PrimaryButton } from "./PrimaryButton.tsx";
 import { SecondaryButton } from "./SecondaryButton.tsx";
 import { DangerButton } from "./DangerButton.tsx";
 
-type ButtonFactoryProps = {
-  type: "primary" | "secondary" | "danger";
+export interface ButtonProps {
   label: string;
-};
+}
+
+interface ButtonFactoryProps extends ButtonProps {
+  type: "primary" | "secondary" | "danger";
+}
 
 export const ButtonFactory: React.FC<ButtonFactoryProps> = ({
   type,
