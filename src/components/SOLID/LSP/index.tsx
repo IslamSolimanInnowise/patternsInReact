@@ -2,7 +2,7 @@ import { createCircle, createRectangle, Shape } from "./shapes";
 
 const LSP: React.FC = () => {
   const shapes: Shape[] = [createCircle(5), createRectangle(10, 20)];
-  // similar to function overloading in TS
+  // personal thought: similar to function overloading in TS
 
   return (
     <div>
