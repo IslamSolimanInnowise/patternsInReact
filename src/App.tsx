@@ -6,6 +6,7 @@ import DIP from "./components/SOLID/DIP";
 import ISP from "./components/SOLID/ISP";
 import LSP from "./components/SOLID/LSP";
 import OCP from "./components/SOLID/OCP";
+import Simple from "./components/SOLID/SimplerExamples";
 import SRP from "./components/SOLID/SRP";
 import Adapter from "./components/structural/Adapter";
 import Decorator from "./components/structural/Decorator";
@@ -28,6 +29,7 @@ const App: React.FC = () => {
       <Iterator />
 
       {/* HERE WE HAVE SOLID EXAMPLES */}
+      <Simple />
 
       {/* SRP */}
       <SRP />

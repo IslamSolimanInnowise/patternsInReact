@@ -4,6 +4,8 @@ export interface DIPUser {
   email: string;
 }
 
+export type DataServiceDIP = typeof dataService;
+
 export const dataService = {
   fetchData: async (): Promise<DIPUser[]> => {
     const response = await fetch("https://jsonplaceholder.typicode.com/users");
@@ -16,5 +18,3 @@ export const dataService = {
     return data;
   },
 };
-
-export type DataServiceDIP = typeof dataService;
